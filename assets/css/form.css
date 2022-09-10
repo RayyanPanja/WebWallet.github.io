@@ -1,0 +1,202 @@
+@import url(mediaq.css);
+
+.input{
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: 4px;
+  resize: vertical;
+  background: var(--primary-clr);
+  color: var(--accent-clr);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.col-lab {
+    float: left;
+    width: 45%;
+    margin-top: 6px;
+  }
+
+.col-inp {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+.col-inp-short{
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+/* Basic Structure Ends */
+.form-contact-container {
+    margin-top: 200px;
+    padding: 20px;
+    width: 50%;
+    background: var(--light-accent);
+}
+
+.form-contact-container a {
+    text-decoration: none;
+    font-family: var(--font-fam);
+    color: white;
+    text-shadow: 0 0 20px lawngreen;
+}
+
+.form-contact-container a::after {
+    content: '.....';
+}
+
+.btn-set {
+    display: flex;
+    gap: 10px;
+    top: 50%;
+    flex: 1 1 50%;
+    padding: 10px;
+    justify-content: end;
+}
+
+.ok-btn,
+.cancle-btn {
+    padding: 10px 40px;
+    border: 0;
+    background-color: transparent;
+    color: var(--white-clr);
+    font-size: 20px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    border-radius: 75px;
+}
+
+.ok-btn {
+    border: 3px solid var(--accent-clr);
+}
+
+.ok-btn:hover {
+    background-color: var(--accent-clr);
+    color: var(--white-clr);
+    box-shadow: 0 0 10px 2px #000;
+}
+
+.cancle-btn:hover {
+    border: 2px solid red;
+    opacity: 0.1;
+}
+
+/* Login Form Starts */
+.hidden-login-form{
+    display: none;
+}
+.visible-login-form{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 35%;
+    height: 70vh;
+    padding: 30px;
+    box-shadow: 0 0 50px 0 indigo;
+    background: var(--primary-clr);
+    z-index: 99999;
+}
+.visible-login-form .input{
+    width: 100%;
+    border: 2px solid var(--secondary-clr);
+}
+.visible-login-form .btn-set{
+    justify-content: end;
+}
+.close-btn{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 2px;
+    border: 0;
+    background: transparent;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+.visible-login-form .btn-set{
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+}
+
+/* Registration Form Starts */
+.register-form-container{
+    width: 98%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 10px;
+    border: 2px solid var(--secondary-clr);
+}
+.register-form-container .col-lab {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+  }
+  .register-form-container .input{
+    color: var(--accent-clr);
+  }
+
+  .acc-container{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 15px;
+    font-size: 32px;
+    background: #000;
+    color: var(--accent-clr);
+  }
+
+  /* Transfer */
+  .form-transfer-container{
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    width: 30%;
+    height: 80vh;
+    top: 20%;
+    left: 35%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 20px 5px rgba(226, 40, 152, 0.215);
+  }
+  .form-transfer-container .col-inp{
+    width: 100%;
+  }
+  .transfer-btn{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    width: 95%;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    background: var(--accent-clr);
+    color: #ccc;
+  }

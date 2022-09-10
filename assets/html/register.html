@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Wallet</title>
+    <!-- Google Fonts -->
+    <link href="http://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="../icons/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/mediaq.css">
+</head>
+
+<body id="Home">
+
+    <nav class="navbar" id="nav">
+        <div class="nav-logo">
+            <a href="#Home">
+                <h1>Web Wallet</h1>
+            </a>
+        </div>
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../../index.html #About" class="nav-link">About</a>
+        <a href="register.html" class="nav-link">Register</a>
+        <a href="../../index.html #Contact" class="nav-link">Contact Us</a>
+        <a href="javascript:void(0)" class="icon" onclick="navbarresponse()"><i class="fa fa-bars"></i></a>
+        <div class="nav-login">
+            <button type="submit" class="nav-btn" onclick="loginform()">Login</button>
+        </div>
+    </nav>
+
+    <main>
+        <section style="width:100%; height:100vh;">
+            <div class="register-form-container">
+                <form action="../php/main-register.php" method="post">
+                    <h1>Persnol Information</h1>
+                    <div class="row">
+                        <div class="col-lab">
+                            <label for="Name">Full Name</label>
+                        </div>
+                        <div class="col-inp-short">
+                            <input type="text" name="name" id="name" class="input" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-lab">
+                            <label for="Age">Age</label>
+                        </div>
+                        <div class="col-inp-short">
+                            <input type="number" name="age" id="age" class="input" placeholder="Age" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lab">
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="col-inp-short">
+                            <input type="email" name="email" id="email" class="input" required
+                                placeholder="Something@gmail.com">
+                        </div>
+                        <div class="col-lab">
+                            <label for="phone">Contact Number</label>
+                        </div>
+                        <div class="col-inp-short">
+                            <input type="tel" name="contact" id="contact" class="input" required
+                                placeholder="+00 0000000000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lab">
+                            <label for="password">Set Password</label>
+                        </div>
+                        <div class="col-inp">
+                            <input type="password" name="password1" id="psw1" class="input" required
+                                placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lab">
+                            <label for="repass">Repeat Password</label>
+                        </div>
+                        <div class="col-inp">
+                            <input type="password" name="password2" id="psw2" class="input"
+                                placeholder="Repeat Password" oninput="comparepsw()" required>
+                        </div>
+                        <p id="pswstring" style="display:none;">*Password Does'nt Match</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lab">
+                            <label for="Address">Full Address</label>
+                        </div>
+                        <div class="col-inp">
+                            <input type="text" name="address" id="address" class="input"
+                                placeholder="Address, City-Zipcode, State, Country" required>
+                        </div>
+                        <div class="col-lab">
+                            <label for="deposit">Deposit Amount</label>
+                        </div>
+                        <div class="col-inp">
+                            <input type="number" name="amount" id="amount" class="input" required
+                                placeholder="Minimum 1000/-" min="1000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" name="terms" id="terms" required><a href="">Terms And Conditions</a>
+                        <div class="btn-set">
+                            <button type="submit" class="ok-btn">Register</button>
+                            <button type="reset" class="cancle-btn">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+    </main>
+
+
+
+    <footer>
+        <p>&copy; Copyright Owned By Team Web Wallet </p>
+        <div class="flex">
+
+            <nav class="footer-nav-1">
+                <h3>Navigation Links</h3>
+                <ul>
+                    <li><a href="#" class="footer-links">Home Page</a></li>
+                    <li><a href="#" class="footer-links">About Us</a></li>
+                    <li><a href="#" class="footer-links">Contact Us</a></li>
+                    <li><a href="#" class="footer-links">Register</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="footer-nav-2">
+                <h3>Admins</h3>
+                <ul>
+                    <li><i class="fa fa-user-alt"></i><a href="">Rayyan Panja</a></li>
+                    <li><i class="fa fa-user-alt"></i><a href="">Vacchani Tejas</a></li>
+                    <li><i class="fa fa-user-alt"></i><a href="">Kotak Dixit</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <p>Rayyan Panja :- Full Stack Developer</p>
+            <p>Tejas Vacchani :- Front-End Developer</p>
+            <p>Dixit Kotak :- Front-End Developer</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/main.js"></script>
+
+</html>

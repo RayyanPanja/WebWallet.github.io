@@ -1,0 +1,213 @@
+@import url(form.css);
+@import url(nav.css);
+@import url(style.css);
+
+:root {
+    --primary-clr: #1A1E23;
+    --accent-clr: #00AA00;
+    --accent2-clr: #990a7f;
+    --secondary-clr: #888888;
+    --light-accent: #565656;
+    --white-clr: #FFFFFF;
+    --font-head: 32px;
+    --font-txt: 16px;
+    --font-fam: 'Clash Display', sans-serif;
+    --btn-padding: 10px;
+    --responsive-width: 100vw;
+}
+
+@media screen and (max-width:660px) {
+    * {
+        overflow-x: hidden;
+    }
+
+}
+
+/* Navbar............ */
+@media screen and (max-width: 660px) {
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: var(--responsive-width);
+        height: 50px;
+        padding: 15px;
+        z-index: 1;
+        background: black;
+    }
+
+    .navbar .nav-link {
+        display: none;
+    }
+
+    .navbar-responsive {
+        position: fixed;
+        top: 0;
+        display: grid;
+        width: var(--responsive-width);
+        background-color: black;
+        color: white;
+        justify-content: left;
+        z-index: 9999;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-login {
+        display: none;
+    }
+    .new-login{
+        display: block;
+        position: absolute;
+        left: 35%;
+        top: 60%;
+    }
+}
+
+/* Header,Sections,Hero-Section............. */
+@media screen and (max-width:660px) {
+
+    section,
+    header {
+        width: var(--responsive-width);
+        z-index: 1;
+    }
+
+    header {
+        margin-top: 50px;
+        width: var(--responsive-width);
+        height: 50vh;
+    }
+
+    body {
+        width: var(--responsive-width);
+    }
+
+    .hero-img {
+        width: var(--responsive-width);
+    }
+
+    .main-logo {
+        width: var(--responsive-width);
+        left: 10px;
+    }
+}
+
+/* About Section */
+@media screen and (max-width:660px) {
+    #About h1 {
+        top: 20px;
+    }
+
+    .about-txt p {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        font-size: var(--font-txt);
+    }
+
+    .about-img {
+        display: contents;
+        position: relative;
+        height: 50vh;
+        border-radius: 20px;
+        background-size: cover;
+        background: black;
+        transform: rotate(0deg);
+    }
+
+    .about-img img {
+        position: absolute;
+        width: 50%;
+        height: 50vh;
+        left: 25%;
+        top: 50%;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 2px grey,
+            0 0 30px 2px #383737,
+            0 0 40px 2px #000;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+}
+
+/* Contact */
+@media screen and (max-width:660px) {
+    .form-contact-container {
+        margin-top: 200px;
+        width: var(--responsive-width);
+        background: var(--light-accent);
+    }
+
+}
+
+/* Footer */
+@media screen and (max-width:660px) {
+    footer {
+        width: var(--responsive-width);
+        padding: 15px;
+        background: #010101;
+    }
+
+    .flex {
+        display: grid;
+    }
+
+    footer p {
+        padding: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:660px) {
+
+    .col-inp,
+    .col-inp-short,
+    .col-lab,
+    .input,
+    label {
+        width: var(--responsive-width);
+    }
+
+    .register-form-container .col-lab {
+        width: 100%;
+    }
+
+    .visible-login-form {
+        position: fixed;
+        bottom: 30%;
+        width: 100%;
+        left: 0;
+    }
+
+    .visible-login-form .btn-set {
+        display: grid;
+        left: 0;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .visible-login-form .ok-btn,
+    .cancle-btn {
+        width: 100%;
+        padding: 10px 328%;
+    }
+
+
+}
+
+@media screen and (max-width:660px) {
+    .keyboard{
+        width: var(--responsive-width);
+    }
+    
+}
