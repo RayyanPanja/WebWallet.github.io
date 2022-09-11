@@ -1,6 +1,7 @@
 function loginform() {
     let form = document.getElementById("login-form");
-    let mainlocation = "https://rayyanpanja.github.io/WebWallet.github.io/";
+    let mainlocation = "http://localhost/ASD/index.html";
+
     window.scrollTo(0, 0);
 
     if (window.location.href !== mainlocation) {
